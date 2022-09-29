@@ -1,0 +1,72 @@
+.dashboard {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 15px 15px; 
+    grid-template-areas: 
+      "name input"
+      "output colour"; 
+    width: 400px; 
+    height: 400px; 
+  }
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.cell {
+  color: black;
+  background-size: cover;
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  border: 1px solid black;
+
+}
+
+.name {
+  grid-area: name;
+  align-items: flex-start;
+  justify-content: center;
+  padding: 10px;
+}
+
+.input {
+  grid-area: input;
+  font-size: 14px;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.output {
+  grid-area: output;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+.colour {
+  grid-area: colour;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.h2-name, .h2-p {
+  margin: 5px;
+}
+
+h3 {
+  font-size: 20px;
+}
+
+.h2-name {
+  font-size: 24px;
+}
+
+.h2-p {
+  font-size: 12px;
+}
