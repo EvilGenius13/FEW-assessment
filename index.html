@@ -1,35 +1,42 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FEW Assessment</title>
- 
+    <link rel="stylesheet" type="text/css" href="./styles.css">
 </head>
 <body>
-  <section class="dashboard">    
+    <main>
+        <section class = "cell names">
+            <h1>Joshua Faigan</h1>
+            <p>FEW Assessment</p>
+        </section>
 
-    <section class="name cell">
-        <h2 class="h2-name">Josh Faigan</h2>
-        <p class="h2-p">FEW Assessment</p>
-    </section>
-    
-    <section class="input cell">
-      <p>Width:</p>
-      <p>Height:</p>
-      <p>Colour:</p>
-    </section>
+        <section class = "cell inputs">
+            <p>Width:</p>
+            <input type="number" id="width-input" name="width-input" ></div>
+            <p>Height:</p>
+            <input type="number" id="height-input" name="height-input"></div>
+            <p>Colour:</p>
+            <input type ="color" id="colour-input" name="colour-input"></div>
+        </section>
 
-    <section class="output cell">
-        <h3>Width</h3>
-        <h3>Height</h3>
-        <h3>Colour</h3>
-    </section>
+        <section class = "cell outputs">
+            <h2>Width</h2>
+            <p id="width-output"></p>
+            <h2>Height</h2>
+            <p id="height-output"></p>
+            <h2>Colour</h2>
+            <p id="colour-output"></p>
+        </section>
 
-    <section class="colour cell">
-      <h2>Colour</h2>
-    </section>
-
-  </section>
-  
+        <section class = "cell display">
+            <h2>Colour</h2>
+            <div id="colour-box"></div>
+        </section>
+    </main>
+    <script src="./scripts.js" type="module"></script>
 </body>
 </html>
